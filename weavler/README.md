@@ -23,6 +23,12 @@ Make changes to your models - say, add a field and remove a model - and then run
 $ python manage.py makemigrations
 ```
 
+or
+
+If you want to give the migration(s) a meaningful name instead of a generated one, you can use the makemigrations --name option:
+
+    $ python manage.py makemigrations --name changed_my_model your_app_label
+
 Once you have your new migration files, you should apply them to your database to make sure they work as expected:
 
     $ python manage.py migrate
