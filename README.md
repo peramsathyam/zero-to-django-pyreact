@@ -1,27 +1,27 @@
+# Django and React Integration Project
+
+This project aims to be as minimal as possible and try to smoothly integrate react components
+and possibly very flexible with generic react
+applications
+
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-# React Tutorial
 
-This is the React comment box example from [the React tutorial](http://facebook.github.io/react/docs/tutorial.html).
-
-## To use
-
-There are several simple server implementations included. They all serve static files from `public/` and handle requests to `/api/comments` to fetch or add data. Start a server with one of the following:
-
-### Python
+### Running the application
 
 ```sh
+virturalenv dj-env
+source dj-env/bin/activate
 pip install -r requirements.txt
-python server.py
+python manage.py runserver
 ```
 
-And visit <http://localhost:3000/>. Try opening multiple tabs!
+And visit <http://localhost:8000/>
 
 ## Changing the port
 
-You can change the port number by setting the `$PORT`
-environment variable before invoking any of the scripts above, e.g.,
+You can change the port number by setting the `$PORT` environment variable before invoking any of the scripts above, e.g.,
 
 ```sh
-PORT=3001 python server.py
+python manage.py runserver 8080
 ```
