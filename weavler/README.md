@@ -25,7 +25,7 @@ $ python manage.py makemigrations
 
 or
 
-If you want to give the migration(s) a meaningful name instead of a generated one, you can use the makemigrations --name option:
+If you want to give the migration(s) a meaningful name instead of a generated one, you can use the `makemigrations --name` option:
 
     $ python manage.py makemigrations --name changed_my_model your_app_label
 
